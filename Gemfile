@@ -3,9 +3,15 @@ git_source(:github){|repo| "https://github.com/#{repo}.git"}
 
 ruby "2.6.9"
 
+gem "config"
+
 gem "rails", "~> 6.0.4", ">= 6.0.4.4"
 
-gem "mysql2", ">= 0.4.4"
+gem "rails-i18n"
+
+gem "i18n_lazy_scope"
+
+gem "mysql2", ">= 0.5"
 
 gem "puma", "~> 4.1"
 
@@ -41,6 +47,13 @@ end
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 group :development, :test do
+  gem "webdrivers"
+end
+
+gem "tzinfo-data", platforms: %i(mingw mswin x64_mingw jruby)
+
+group :development, :test do
+  gem "debug", platforms: %i(mri mingw x64_mingw)
   gem "rubocop", "~> 0.74.0", require: false
   gem "rubocop-checkstyle_formatter", require: false
   gem "rubocop-rails", "~> 2.3.2", require: false

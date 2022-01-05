@@ -21,7 +21,7 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
-config/credentials.yml.enc
+/config/credentials.yml.enc
 /config/database.yml
 /config/local_env.yml
 
@@ -31,6 +31,7 @@ config/credentials.yml.enc
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
+yarn.lock
 
 .framgia-ci-reports/
 .framgia-ci-result.temp.yml
@@ -39,3 +40,4 @@ yarn-debug.log*
 .sun-ci.yml
 database-ci.yml
 public/packs/
+
