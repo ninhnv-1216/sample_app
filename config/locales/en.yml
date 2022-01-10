@@ -3,6 +3,11 @@ en:
   rails_tut: "Ruby on Rails tutorial"
   rails_book: "Ruby on Rails book"
   rails_contact: "Ruby on Rails contact page"
+  log_in: "Log in"
+  sign_up: "Sign up"
+  new_users: "This will be a signup page for new users."
+  news: "News"
+  michael_hartl: " - Michael Hartl"
   app:
     title: "Sample App"
   home:

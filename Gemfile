@@ -5,6 +5,8 @@ ruby "2.6.9"
 
 gem "config"
 
+gem "bootstrap-sass", "3.4.1"
+
 gem "rails", "~> 6.0.4", ">= 6.0.4.4"
 
 gem "rails-i18n"
@@ -40,11 +42,7 @@ end
 group :test do
   gem "capybara", ">= 2.15"
   gem "selenium-webdriver"
-
-  gem "webdrivers"
 end
-
-gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 group :development, :test do
   gem "webdrivers"
