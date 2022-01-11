@@ -7,3 +7,7 @@ rails_help: "https://github.com/mhartl/sample_app_6th_ed/blob/main/HELP.md"
 rails_book: "https://www.railstutorial.org/book"
 learn_enough: "https://www.learnenough.com/"
 rails_screen_casts: "https://screencasts.railstutorial.org/"
+email_regex: !ruby/regexp /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i
+max_email: 200
+min_pass: 6
+max_name: 10

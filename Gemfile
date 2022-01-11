@@ -3,6 +3,8 @@ git_source(:github){|repo| "https://github.com/#{repo}.git"}
 
 ruby "2.6.9"
 
+gem "bcrypt", "3.1.13"
+
 gem "config"
 
 gem "bootstrap-sass", "3.4.1"
