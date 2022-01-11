@@ -39,5 +39,4 @@ yarn.lock
 /test/
 .sun-ci.yml
 database-ci.yml
-public/packs/
-
+/app/assets/images/
