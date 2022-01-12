@@ -6,7 +6,7 @@ class User < ApplicationRecord
     length: {maximum: Settings.max_email},
     format: {with: Settings.email_regex},
     uniqueness: true
-  validates :password, presence: true, length: {maximum: Settings.min_pass},
+  validates :password, presence: true, length: {minimum: Settings.min_pass},
     if: :password
 
   has_secure_password

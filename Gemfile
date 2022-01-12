@@ -5,6 +5,8 @@ ruby "2.6.9"
 
 gem "bcrypt", "3.1.13"
 
+gem "pry-rails"
+
 gem "config"
 
 gem "bootstrap-sass", "3.4.1"

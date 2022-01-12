@@ -10,4 +10,4 @@ rails_screen_casts: "https://screencasts.railstutorial.org/"
 email_regex: !ruby/regexp /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i
 max_email: 200
 min_pass: 6
-max_name: 10
+max_name: 20
