@@ -11,6 +11,8 @@ gem "config"
 
 gem "bootstrap-sass", "3.4.1"
 
+gem "jquery-rails"
+
 gem "rails", "~> 6.0.4", ">= 6.0.4.4"
 
 gem "rails-i18n"
@@ -23,7 +25,7 @@ gem "puma", "~> 4.1"
 
 gem "sass-rails", ">= 6"
 
-gem "webpacker", "~> 4.0"
+gem "webpacker", "~> 5.0"
 
 gem "turbolinks", "~> 5"
 
