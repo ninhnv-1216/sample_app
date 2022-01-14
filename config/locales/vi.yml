@@ -14,6 +14,7 @@ vi:
   account: "Tài khoản"
   profile: "Hồ sơ người dùng"
   setting: "Cài đặt người dùng"
+  remember_me: "Ghi nhớ đăng nhập?"
   news: "Tin Tức"
   michael_hartl: " - Michael Hartl"
   app:
