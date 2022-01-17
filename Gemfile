@@ -5,6 +5,10 @@ ruby "2.6.9"
 
 gem "bcrypt", "3.1.13"
 
+gem "faker", "2.1.2"
+
+gem "pagy"
+
 gem "pry-rails"
 
 gem "config"
