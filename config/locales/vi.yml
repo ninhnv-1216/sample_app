@@ -5,6 +5,7 @@ vi:
   rails_book: "Sách dạy Ruby on Rails"
   rails_contact: "Trang liên lạc Ruby on Rails"
   log_in: "Đăng nhập"
+  please_login: "Xin vui lòng đăng nhập"
   log_out: "Đăng xuất"
   sign_up: "Đăng ký"
   sign_up_now: "Đăng ký ngay!"
@@ -13,7 +14,12 @@ vi:
   all_user: "Tất cả người dùng"
   account: "Tài khoản"
   profile: "Hồ sơ người dùng"
-  setting: "Cài đặt người dùng"
+  settings: "Cài đặt người dùng"
+  updated: "Đã cập nhật hồ sơ!"
+  update_failed: "Cập nhật hồ sơ không thành công!"
+  delete_user: "Xóa"
+  user_delete_failed: "Xóa không thành công"
+  user_deleted: "Đã xóa người dùng"
   remember_me: "Ghi nhớ đăng nhập?"
   news: "Tin Tức"
   michael_hartl: " - Michael Hartl"
@@ -45,7 +51,13 @@ vi:
       submit: "Tạo tài khoản"
     show:
       not_found: "Không tìm thấy người dùng"
-  error:
+    edit:
+      title: "Chỉnh sửa người dùng"
+      save_change: "Lưu thay đổi"
+      change: "Thay đổi"
+      update_profile: "Thay đổi thông tin của bạn"
+      sure: "Bạn có chắc muốn xóa?"
+    error:
       error_valid: "Hiện đang có %{error}"
       error: "lỗi"
       user:

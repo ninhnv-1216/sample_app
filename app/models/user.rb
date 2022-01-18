@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  scope :latest_user, ->{order created_at: :desc}
   before_save :downcase_email
   attr_accessor :remember_token
 
@@ -8,8 +9,8 @@ class User < ApplicationRecord
     length: {maximum: Settings.max_email},
     format: {with: Settings.email_regex},
     uniqueness: true
-  validates :password, presence: true, length: {minimum: Settings.min_pass},
-    if: :password
+  validates :password, presence: true,
+    length: {minimum: Settings.min_pass}
 
   has_secure_password
 
@@ -33,10 +34,11 @@ class User < ApplicationRecord
     update remember_digest: User.digest(remember_token)
   end
 
-  def authenticated? remember_token
-    return false unless remember_token
+  def authenticated? attribute, token
+    digest = send "#{attribute}_digest"
+    return false unless digest
 
-    BCrypt::Password.new(remember_digest).is_password? remember_token
+    BCrypt::Password.new(digest).is_password? token
   end
 
   def forget
