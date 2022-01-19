@@ -9,6 +9,8 @@ gem "faker", "2.1.2"
 
 gem "pagy"
 
+gem "figaro"
+
 gem "pry-rails"
 
 gem "config"

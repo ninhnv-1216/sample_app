@@ -1,0 +1,6 @@
+HOST: "localhost:3000"
+HOST_MAIL: "nguyen.van.ninh@sun-asterisk.com"
+MAIL_USER_NAME: "nguyen.van.ninh@sun-asterisk.com"
+MAIL_USER_PASSWORD: "xxxxxxxxxxxxxxxxxxx"
+MAIL_ADDRESS: "smtp.gmail.com"
+MAIL_PORT: "587"

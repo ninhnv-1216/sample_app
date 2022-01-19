@@ -40,3 +40,6 @@ yarn.lock
 .sun-ci.yml
 database-ci.yml
 /app/assets/images/
+
+# Ignore application configuration
+/config/application.yml
