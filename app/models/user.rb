@@ -1,7 +1,7 @@
 class User < ApplicationRecord
-  scope :latest_user, ->{order created_at: :desc}
   before_save :downcase_email
-  attr_accessor :remember_token
+  before_create :create_activation_digest
+  attr_accessor :remember_token, :activation_token
 
   validates :name, presence: true,
     length: {maximum: Settings.max_name}
@@ -14,6 +14,8 @@ class User < ApplicationRecord
 
   has_secure_password
 
+  scope :latest_user, ->{order created_at: :desc}
+  scope :activate, ->{where activated: true}
   class << self
     def digest string
       cost = if ActiveModel::SecurePassword.min_cost
@@ -45,7 +47,21 @@ class User < ApplicationRecord
     update_attribute :remember_digest, nil
   end
 
+  def activate
+    update_columns activated: true, activated_at: Time.zone.now
+  end
+
+  def send_activation_email
+    UserMailer.account_activation(self).deliver_now
+  end
+
   private
+
+  def create_activation_digest
+    self.activation_token = User.new_token
+    self.activation_digest = User.digest activation_token
+  end
+
   def downcase_email
     email.downcase!
   end

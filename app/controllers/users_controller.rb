@@ -5,7 +5,7 @@ class UsersController < ApplicationController
   before_action :admin_user, only: %i(destroy)
 
   def index
-    @pagy, @users = pagy User.all.latest_user, items: Settings.items_page
+    @pagy, @users = pagy User.activate, items: Settings.items_page
   end
 
   def show; end
@@ -17,9 +17,9 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
-      log_in @user
-      flash[:success] = t "welcome"
-      redirect_to @user
+      @user.send_activation_email
+      flash[:info] = t "please_check"
+      redirect_to login_url
     else
       render :new
     end
