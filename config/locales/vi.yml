@@ -31,7 +31,22 @@ vi:
                            để kích hoạt tài khoản của bạn:"
   account_not_activated: "Chưa kích hoạt tài khoản. Kiểm tra email của bạn."
   activate: "Kích hoạt"
+  forgot_password: "Quên mật khẩu"
+  reset_password: "Đặt lại mật khẩu"
+  email_reset_pass: "Email được gửi kèm theo hướng dẫn đặt lại mật khẩu"
+  email_not_found: "Không tìm thấy địa chỉ email"
+  pass_submit: "Gửi"
   please_check: "Vui lòng kiểm tra email của bạn để kích hoạt tài khoản của bạn"
+  user_not_valid: "Người dùng không hợp lệ"
+  password_reset:
+    title: "Đặt lại mật khẩu"
+    link: "Bấm vào link dưới để đặt lại mật khẩu"
+    content: "Link sẽ hết hạn trong 2 giờ.Nếu bạn không muốn đổi
+              mật khẩu, bỏ qua email này."
+    expire: "Hết hạn đặt lại mật khẩu"
+    success: "Mật khẩu đã được đặt lại."
+  update_password: "Cập nhật mật khẩu"
+  not_empty: "Không thể để trống"
   app:
     title: "Ứng dụng mẫu"
   home:
