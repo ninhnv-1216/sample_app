@@ -16,3 +16,7 @@ gravatar_url: "https://secure.gravatar.com/avatar/#"
 avt_size: 50
 items_page: 8
 expire_hour: 2
+post_length: 140
+img_data_size: 5
+img_size: [500, 500]
+image_type: "%w[image/jpeg image/gif image/png]"

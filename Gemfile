@@ -11,6 +11,12 @@ gem "pagy"
 
 gem "figaro"
 
+gem "image_processing", "1.9.3"
+
+gem "mini_magick", "4.9.5"
+
+gem "i18n-js"
+
 gem "pry-rails"
 
 gem "config"
@@ -20,6 +26,8 @@ gem "bootstrap-sass", "3.4.1"
 gem "jquery-rails"
 
 gem "rails", "~> 6.0.4", ">= 6.0.4.4"
+
+gem "active_storage_validations", "0.8.2"
 
 gem "rails-i18n"
 

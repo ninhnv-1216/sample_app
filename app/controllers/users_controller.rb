@@ -8,10 +8,13 @@ class UsersController < ApplicationController
     @pagy, @users = pagy User.activate, items: Settings.items_page
   end
 
-  def show; end
-
   def new
     @user = User.new
+  end
+
+  def show
+    @pagy, @microposts = pagy @user.microposts.newest,
+                              items: Settings.item_page
   end
 
   def create
@@ -19,7 +22,7 @@ class UsersController < ApplicationController
     if @user.save
       @user.send_activation_email
       flash[:info] = t "please_check"
-      redirect_to login_url
+      redirect_to root_url
     else
       render :new
     end
