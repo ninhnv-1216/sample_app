@@ -76,3 +76,8 @@ group :development, :test do
   gem "rubocop-checkstyle_formatter", require: false
   gem "rubocop-rails", "~> 2.3.2", require: false
 end
+
+group :production do
+  gem "pg"
+  gem "rails_12factor", "0.0.2"
+end
