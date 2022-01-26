@@ -14,7 +14,7 @@ class UsersController < ApplicationController
 
   def show
     @pagy, @microposts = pagy @user.microposts.newest,
-                              items: Settings.item_page
+                              items: Settings.items_page
   end
 
   def create
@@ -47,6 +47,18 @@ class UsersController < ApplicationController
       flash[:danger] = t "user_delete_failed"
     end
     redirect_to users_url
+  end
+
+  def following
+    @title = t "following"
+    @pagy, @users = pagy @user.following, items: Settings.items_page
+    render "show_follow"
+  end
+
+  def followers
+    @title = t "followers"
+    @pagy, @users = pagy @user.followers, items: Settings.items_page
+    render "show_follow"
   end
 
   private

@@ -104,3 +104,8 @@ en:
   too_large_file: "Maximum file size is 5MB. Please choose a smaller file."
   error_valid: "The form contains %{error}"
   error: "error"
+  following: "Following"
+  followers: "Followers"
+  follow: "Follow"
+  unfollow: "Unfollow"
+  not_found: "Not found user"
