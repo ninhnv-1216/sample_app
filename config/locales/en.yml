@@ -85,8 +85,22 @@ en:
       change: "Change"
       update_profile: "Update your profile"
       sure: "You sure?"
-  error:
-    error_valid: "The form contains %{error}"
-    error: "error"
-    user:
-      not_found: "Not found user"
+    error:
+      error: "error"
+      user:
+        not_found: "Not found user"
+  posted: "Posted %{time_ago} ago."
+  micropost: "Micropost"
+  micropost_created: "Micropost created!"
+  micropost_deleted: "Micropost deleted"
+  micropost_delete_failed: "Micropost delete failed"
+  view_my_profile: "View my profile"
+  post: "Post"
+  compose_post: "Compose new micropost..."
+  feed: "Micropost feed"
+  sure: "You sure?"
+  img_size: "Should be less than 5MB"
+  img_valid: "Must be a valid image format"
+  too_large_file: "Maximum file size is 5MB. Please choose a smaller file."
+  error_valid: "The form contains %{error}"
+  error: "error"
