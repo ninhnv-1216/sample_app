@@ -6,7 +6,7 @@ class StaticPagesController < ApplicationController
 
     @micropost = current_user.microposts.build
     @pagy, @feed_items = pagy current_user.feed.newest,
-                              items: Settings.item_page
+                              items: Settings.items_page
   end
 
   def help; end

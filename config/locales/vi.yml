@@ -100,3 +100,8 @@ vi:
   too_large_file: "File không được lớn hơn 5MB. Vui lòng thử lại."
   error_valid: "Hiện đang có %{error}"
   error: "lỗi"
+  following: "Đang theo dõi"
+  followers: "Người theo dõi"
+  follow: "Theo dõi"
+  unfollow: "Hủy theo dõi"
+  not_found: "Không tìm thấy người dùng"
